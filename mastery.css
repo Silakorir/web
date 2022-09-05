@@ -1,0 +1,33 @@
+/* a:link a:visited{
+  color: rebeccapurple;
+  font-weight: bold;
+}
+a:hover{
+color: hotpink;
+} */
+/* a:link,
+a:visited {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+a:hover {
+    color:hotpink;
+} */
+/* a:hover,  a:active,  a:focus {color:red;} */
+/* a:visited:hover {color:olive;} */
+/* #nav li{
+  background: url() no-repeat top left;
+  padding-left: 20px;
+} */
+/* h2 + p {
+  font-weight: bold;
+  font-size: 1.4em;
+  color:yellow; }
+  */
+acronym[title]{
+border-bottom: 1px dotted #999;
+}
+/* You can provide more contextual information by changing the cursor from a pointer to a question
+mark when the cursor hovers over the element, indicating that this element is different from most */
+/* acronym[title]:hover,acronym[title]:focus{cursor: help;} */

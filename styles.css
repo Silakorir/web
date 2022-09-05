@@ -1,0 +1,192 @@
+body{
+  font-family: "Montserrat";
+    text-align: center;
+}
+
+
+
+
+
+/* You want to establish some sort of visual hierarchy and you can do that using size or you can do that using weight */
+h1,h2,h3,h4,h5,h6{
+  font-family: "Montserrat";
+}
+
+/* So I'm going to go ahead and select the paragraph elements and I'm going to change the color to thisgreyish color which is 8f8f8f. */
+p{
+  color: #8f8f8f;
+}
+/* Containers */
+.container-fluid{
+  padding: 7% 15%;
+}
+/* Section */
+.colored-section{
+  background: #a8dadc;
+  color: #fff;
+}
+.white-section{
+background-color: #ffff;
+}
+/* Headings */
+.big-heading{
+  font-family: 'Montserrat-black', sans-serif;
+  font-size: 3.5rem;
+/* Remember line heightyou don't usually specify a unit, because it's two times or one times and you don't actually need to add pixels or rems or anything like that. */
+line-height: 1.5;
+font-weight: 900;
+}
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+/* navigation bar */
+/* can you think of a way in which we can set the bottom padding to 4.5rem, without touching the paddingon any other side of the nav bar? get rid of this padding which came from, probably, the Bootstrap element, and we can do that by instead of using padding bottom
+ to add padding and then add zero to the top, zero to the leftand right and 4.5 rpm to the bottom only. */
+.navbar{
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand{
+  font-family:"ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+/* the next thing we should address in the nav bar are these nav items.They need a bit more space between each other.So I'm again going
+to add some padding.I'll keep this as a fixed size just because we've got that responsiveness, */
+
+ /* .nav-item{
+  padding: 0 18px;
+} */
+.nav-link{
+  font-size: 1.2rem;
+  font-family: "Montserrat-light"
+}
+/* and the one that I find to work the best is about 5 percent on the top, 3 percent on the right, 5 percent on the left, and 0 on the bottom. */
+.download-button{
+  margin: 5% 3% 5% 0;
+}
+/* Tilte section */
+#title{
+
+  /* background: #a8dadc; */
+  /* So, this line is inside our title section, and, by changing the color of all text in the title section,if later on I decide to add a subtitle or, you know, a little bit of explainer text, or whatever it maybe,it will still keep to our current color scheme. */
+  /* color: #fff; */
+}
+/* the container-fluid class that is contained inside the title section then apply this specific padding because this rule is more specific than the one that only targets the container-fluid class, then this will override the previous one. By adding space you tell that the compiler must find the .container-fluid inside #title. Which you use for descendant of a specified parent.*/
+
+#title .container-fluid{
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+/* So this is its parent, which is the containing div, which is our col-lg-6 on desktop and 12 and a full width on iPad or mobile. */
+.title-img{
+  width: 20%;
+  transform: rotate(25deg);
+  position: absolute;
+  /* t's only 30 percent and that distributes a little more to the right and looks a lot better. */
+  right: 30%;
+
+}
+/* features section */
+#features{
+  /* nd I'm going to add a padding around all four sides and it's going to be 7 percent top  and bottom 12 and  percent left and right is 15 */
+  /* padding: 7% 15%; */
+  background-color: #ffff;
+  position: relative;
+  /* our feature section should be on top even though we haven't actually set a z-index. */
+  /* z-index: 1; */
+}
+.feature-title{
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.features-box{
+  /* So I'm going to go ahead and add maybe around 5 percent of padding.And now our text is looking a lot shorter and a lot easier to read. */
+  padding: 5%;
+
+}
+.icon{
+color: #ef8172;
+margin-bottom: 1.5rem;
+}
+.icon:hover{
+  color: #a8dadc;
+}
+/* testimonial section */
+#testimonials{
+  /* I'm going to add some padding and it's going to be the same as we had in features.So it's 7 percent top and bottom and 15 percent left and right.change the background color to the same one that we had before whichis this ef8172. */
+
+
+/* So if you're not going to have explicit pages on your web site and you're only going to have sections on a one pager, then it's really really important that you have some sort of way of giving the user acue that this is not the same section as this one. */
+background-color:#e5989b;
+/* color: #fffffc; */ /* because it's already inside a section that has a class of colored-section, which has thattext color that's applied, but we can override the background color by applying a style to our id.*/
+}
+.testimonial-text{
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+.testimonial-image{
+   width: 10%; /*make it smaller by changing the width, let's say down to 10 percent. */
+border-radius: 100%;   /* changing the border-radius to 100 percent and that makes it a circle, */
+ margin: 10px;   /*a 20 pixel margin all around. */
+}
+/* .carousel-item{
+    padding: 7% 15%;
+} */
+#press{
+  background-color:#e5989b;
+   /*text-align: center; add t he text-align property and I'm going to change it to center. */
+  padding-bottom: 10%;  /* add maybe just padding-bottom of, say, 3 percent, and now it's lifted up a little bit and it doesn't look like it's so sudden. */
+}
+#press-logo{
+   width: 15%; /* let's change their width to make them a little bit smaller,let’s say maybe 15 percent */
+   margin: 20px 20px 50px;  /*we can add a margin of, say, maybe 20 pixels from the top, 20 pixels from the left and right and then 50 pixels from the bottom And        this                    will give it a bit of space between each logo, but also separate it from the testimonial section and also the bottom of this colored section.*/
+
+}
+/* pricing section */
+#pricing{
+  padding:100px;
+  /* text-align: center; */
+
+}
+
+.pricing-text{
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+.pricing-column{
+padding:3% 2%;
+}
+/* CTA Section */
+#cta{
+  /* background-color:  #a8dadc;
+  color: #52796f; */
+  /* padding: 7% 15%; */
+
+}
+.cta-heading{
+  font-weight: "Montserrat-black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+/* Footer Section */
+/* #footer{ */
+  /* padding: 7% 15%; */
+  /* text-align: center; */
+
+ /* } */
+
+.fa-brands{
+  margin: 20px 10px;
+}
+@media (max-width:1028px) {
+  #title{
+    text-align: center;
+  }
+.title-img{
+position: static;
+/* next thing we want to do is to rotate it back to the center. So to do this we have to use thetransform property. So this is rotate back to zero which means that it's straight up.*/
+transform: rotate(0);
+}
+}
