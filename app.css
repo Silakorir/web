@@ -1,0 +1,121 @@
+/* h2{
+  color: rgb(51, 255, 245);
+  background: rebeccapurple;
+}
+p{
+  color: teal;
+  background: purple;
+}
+button{
+  color: magenta;
+  background:#28C7BF;
+}
+body{
+background-color: #c6f;
+} */
+/* h1{
+  text-align: center;
+  font-weight: 400;
+  text-decoration: #56fcfc underline wavy;
+  letter-spacing: 15px;
+  font-size: 80px;
+  font-family: monospace;
+
+}
+a{
+  text-decoration: none;
+}
+p{
+  line-height: 1.5em
+} */
+/* *{
+  background-color: cyan;
+} */
+body{
+  background-color: #a6d3f7 ;
+}
+button{
+  font-size: 30px;
+  background-color: #6a00f4;
+}
+h1,h2{
+  color:#006494;
+}
+.fish{
+  text-decoration: none;
+  font-weight: 700;
+}
+#submit{
+background-color: #535c61;
+color: #ffea00;
+}
+span{
+color: #0091ad;
+}
+.fis-fish{
+  background-color: #723c70;
+  color: #d3d3d3;
+  font-size: 16px;
+
+}
+footer a{
+color: #00916e;
+} *
+
+ textarea + button {
+  color: black;
+}
+/* direct descendant */
+footer > a {
+  color: #6f5e53;
+  background-color: #d3fac7;
+}
+input[type="password"]{
+  color:greenyellow;
+}
+#agree{
+  background-color: greenyellow;
+}
+a[href="google"]{
+  color: magenta;
+
+}
+button:hover{
+  background-color: #a31621;
+  color:#f7fff7;
+}
+/* button:hover{
+  background-color: olive;
+  font-size: 10px;
+} */
+.fish:hover{
+  text-decoration:underline;
+}
+ /* button:active{
+  background-color: #d4d700;
+} */
+.post:nth-of-type(2) {
+  background-color: #4b7f52;
+  font-weight: bold;
+}
+
+h2::first-letter{
+  font-size: 50px;
+}
+p::first-line{
+text-decoration: overline;
+}
+p::first-letter{
+  color: goldenrod;
+  font-weight: bold;
+}
+p::selection{
+  background-color: #ffba08;
+}
+h1,h2{
+  color:#06d6a0;
+}
+button{
+  background-color:magenta !important; 
+}
+/* his technique works by first targeting any links that start with the text http: using the [att^=val]attribute selector:  */
